@@ -2,10 +2,13 @@
 
 > Inject Falco and pdig into a running kubernetes pod.
 
+
 This repo exists to show the concept that Falco + pdig can be
 injected into running pods without requiring to modify the original image.
 
 **Warning**: I'm doing expriments here, don't take this seriously.
+
+[![asciicast](https://asciinema.org/a/83utf2y7g43bGtKEc7ccxLGiA.svg)](https://asciinema.org/a/83utf2y7g43bGtKEc7ccxLGiA)
 
 
 In order to inject, you need a rootfs containing Falco, its dependencies and pdig.
