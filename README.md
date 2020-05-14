@@ -33,7 +33,7 @@ curl -O https://fs.fntlnz.wtf/falco/rootfs.tar
 ## Full example (I just want to try this!)
 
 ```
-kubectl run unsecure-falco-example --image debian -- sleep 9999999
+kubectl run unsecure-falco-example --image nginx
 curl -O https://fs.fntlnz.wtf/falco/rootfs.tar
 go build .
 ./falco-inject --selector "run=unsecure-falco-example" --namespace default
@@ -49,7 +49,3 @@ Q. Can I use this in production?
 
 A. Remember that discussion we had about trusting my 1-day-old repositories? USE IT
 
-## Known issues
-
-- Looks like the attach feature of pdig is not working properly, see `injector.go` for details.
-- Looks like Falco can't read from process directories not owned by the root user while running in an unprivileged pod

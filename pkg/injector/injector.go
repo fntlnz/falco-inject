@@ -315,7 +315,7 @@ cd /tmp
 tar -xvf rootfs.tar
 cd rootfs
 cp -r -n * /
-/pdig -a "passwd root"
+/pdig -p 1
 falco -u
 `
 
