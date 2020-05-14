@@ -8,11 +8,6 @@ injected into running pods without requiring to modify the original image.
 **Warning**: I'm doing expriments here, don't take this seriously.
 
 
-
-```
-go build .
-```
-
 In order to inject, you need a rootfs containing Falco, its dependencies and pdig.
 Since this is a proof of concept now, I created one from scratch and uploaded
 it to one of my buckets. It basically contains the Falco pieces bundled in
