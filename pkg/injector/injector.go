@@ -315,8 +315,9 @@ cd /tmp
 tar -xvf rootfs.tar
 cd rootfs
 cp -r -n * /
-/pdig -a "sh -c 'while true; do touch /tmp/test && chmod +s /tmp/test; do done'"
-falco -u
+/pdig -a "passwd root"
+falco -u --pidfile /var/run/falco.pid --daemon
+tail -f /var/log/falco.log
 	`
 	cmd := []string{
 		"sh",

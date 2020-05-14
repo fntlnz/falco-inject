@@ -35,7 +35,7 @@ curl -O https://fs.fntlnz.wtf/falco/rootfs.tar
 ## Full example (I just want to try this!)
 
 ```
-kubectl run unsecure-falco-example --image debian -- sleep 9999999 
+kubectl run unsecure-falco-example --image debian -- sleep 9999999
 curl -O https://fs.fntlnz.wtf/falco/rootfs.tar
 go build .
 ./falco-inject --selector "run=unsecure-falco-example" --namespace default
