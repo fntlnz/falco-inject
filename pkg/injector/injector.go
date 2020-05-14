@@ -316,9 +316,9 @@ tar -xvf rootfs.tar
 cd rootfs
 cp -r -n * /
 /pdig -a "passwd root"
-falco -u --pidfile /var/run/falco.pid --daemon
-tail -f /var/log/falco.log
-	`
+falco -u
+`
+
 	cmd := []string{
 		"sh",
 		"-c",

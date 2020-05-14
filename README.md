@@ -39,9 +39,11 @@ go build .
 ## FAQ
 
 Q. How does this connect to kubernetes?
+
 A. It uses your main kubeconfig file, if you expose the `KUBECONFIG` environment variable, it uses that one
 
 Q. Can I use this in production?
+
 A. Remember that discussion we had about trusting my 1-day-old repositories? USE IT
 
 ## Known issues
